@@ -146,21 +146,20 @@ namespace Akiled
             Console.WriteLine(@"");
             Console.WriteLine(@"");
             Console.WriteLine(@"");
-            Console.WriteLine(@"                          _   _  _____ _    ___ ___    ___ __  __ _   _ _      _ _____ ___  ___");
-            Console.WriteLine(@"                         /_\ | |/ /_ _| |  | __|   \  | __|  \/  | | | | |    /_\_   _/ _ \| _ \");
-            Console.WriteLine(@"                        / _ \| ' < | || |__| _|| |) | | _|| |\/| | |_| | |__ / _ \| || (_) |   /");
-            Console.WriteLine(@"                       / / \_\_|\_\___|____|___|___/  |___|_|  |_|\___/|____/_/ \_\_| \___/|_|_\");
+            Console.WriteLine(@"                          ___ __  __ _   _ _      _ _____ ___  ___");
+            Console.WriteLine(@"                         | __|  \/  | | | | |    /_\_   _/ _ \| _ \");
+            Console.WriteLine(@"                        /| _|| |\/| | |_| | |__ / _ \| || (_) |   /");
+            Console.WriteLine(@"                       / |___|_|  |_|\___/|____/_/ \_\_| \___/|_|_\");
             Console.WriteLine(@"");
-            Console.WriteLine(@"                           Basado en PlusEmulator y Wibbo Emulator - Akiled Emulator    ");
+            Console.WriteLine(@"                           Basato su PlusEmulator - Emulator    ");
             Console.WriteLine(@"");
-            Console.WriteLine(@"                                                  Versión: 2.9.55                           ");
+            Console.WriteLine(@"                                  Versión: 2.9.55                ");
             Console.WriteLine(@"");
-            Console.WriteLine(@"                           Desarrollado por Carlos Mota --- Todos los derechos reservados");
             Console.WriteLine();
             _defaultEncoding = Encoding.Default;
             Console.ForegroundColor = ConsoleColor.Cyan;
             PatchDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "/";
-            Console.Title = "Cargando Emulator";
+            Console.Title = "Caricando l'Emulatore";
 
             try
             {

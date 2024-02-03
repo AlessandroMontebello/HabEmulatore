@@ -192,6 +192,8 @@ namespace Akiled.HabboHotel.Rooms.Chat.Filter
                                                         "jadozz",
                                                         "javvo",
                                                         "habpvp",
+                                                        "bobba",
+                                                        "bss",
                                                         };
 
 

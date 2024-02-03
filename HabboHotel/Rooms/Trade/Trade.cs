@@ -329,23 +329,23 @@ namespace Akiled.HabboHotel.Rooms
                 var client = new DiscordWebhookClient(Webhook_trade_WebHookurl);
 
                 var message = new DiscordMessage(
-                 "La Seguridad es importante para nosotros! " + DiscordEmoji.Grinning,
+                 "Per noi la sicurezza è importante!" + DiscordEmoji.Grinning,
                     username: Webhook_trade_UserNameD,
                     avatarUrl: Webhook_trade_ProfilePicture,
                     tts: false,
                     embeds: new[]
         {
                                 new DiscordMessageEmbed(
-                                "Notificacion de trade" + DiscordEmoji.Thumbsup,
+                                "Notifica trade" + DiscordEmoji.Thumbsup,
                                  color: 0,
-                                author: new DiscordMessageEmbedAuthor(this.GetTradeUser(this.oneId).GetClient().GetHabbo().Username + " acepto el trade con " + this.GetTradeUser(this.twoId).GetClient().GetHabbo().Username),
-                                description: "Informacion de trade",
+                                author: new DiscordMessageEmbedAuthor(this.GetTradeUser(this.oneId).GetClient().GetHabbo().Username + " accetta il trade con " + this.GetTradeUser(this.twoId).GetClient().GetHabbo().Username),
+                                description: "Informazioni trade",
                                 fields: new[]
                                 {
-                                    new DiscordMessageEmbedField("Usuario 1", this.GetTradeUser(this.oneId).GetClient().GetHabbo().Username, true),
-                                    new DiscordMessageEmbedField("Usuario 2", this.GetTradeUser(this.twoId).GetClient().GetHabbo().Username, true),
-                                    new DiscordMessageEmbedField("Items 1", itemsname1 ?? "Nada", true),
-                                    new DiscordMessageEmbedField("Items 2", itemsname2 ?? "Nada", true),
+                                    new DiscordMessageEmbedField("Utente 1", this.GetTradeUser(this.oneId).GetClient().GetHabbo().Username, true),
+                                    new DiscordMessageEmbedField("Utente 2", this.GetTradeUser(this.twoId).GetClient().GetHabbo().Username, true),
+                                    new DiscordMessageEmbedField("Items 1", itemsname1 ?? "Niente", true),
+                                    new DiscordMessageEmbedField("Items 2", itemsname2 ?? "Niente", true),
 
                                 },
                                 thumbnail: new DiscordMessageEmbedThumbnail(Webhook_trade_Thumbnail),

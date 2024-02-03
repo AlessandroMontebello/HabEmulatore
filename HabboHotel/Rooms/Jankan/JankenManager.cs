@@ -61,7 +61,7 @@ namespace Akiled.HabboHotel.Rooms.Janken
                 mJankenParty.TryAdd(User.PartyId, new Janken(User.UserId, DuelUser.UserId));
 
                 User.SendWhisperChat(string.Format(AkiledEnvironment.GetLanguageManager().TryGetValue("janken.wait", User.GetClient().Langue), DuelUser.GetUsername()));
-                DuelUser.SendWhisperChat(User.GetUsername() + " te ha desafiado en Piedra Papel o Tijera :janken " + User.GetUsername() + " para aceptar desafio.");
+                DuelUser.SendWhisperChat(User.GetUsername() + " ti ha sfidato a Sasso Carta Forbici :janken " + User.GetUsername() + " per accettare la sfida.");
             }
         }
 

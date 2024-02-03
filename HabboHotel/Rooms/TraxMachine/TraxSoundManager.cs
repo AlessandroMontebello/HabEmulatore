@@ -20,7 +20,7 @@ namespace Akiled.HabboHotel.Rooms.TraxMachine
             }
             foreach (DataRow row in (InternalDataCollectionBase)table.Rows)
                 TraxSoundManager.Songs.Add(TraxMusicData.Parse(row));
-            Console.WriteLine(DateTime.Now.ToString("HH:mm:ss | ") + "» " + TraxSoundManager.Songs.Count.ToString() + " Jukebox Cargada");
+            Console.WriteLine(DateTime.Now.ToString("HH:mm:ss | ") + "» " + TraxSoundManager.Songs.Count.ToString() + " Jukebox Caricato");
         }
 
         public static TraxMusicData GetMusic(int id)

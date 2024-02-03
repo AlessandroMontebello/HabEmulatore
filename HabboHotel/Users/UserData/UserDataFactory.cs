@@ -250,17 +250,17 @@ namespace Akiled.HabboHotel.Users.UserData
                 if (interschat == "true")
                 {
                     if (user.Rank >= Convert.ToInt32(interschatrank) && user.Isinter || user.HasFuse("fuse_allchatsvisible")) //Change it to the minimum rank you want
-                        friends.Add(0x4fffffff, new MessengerBuddy(0x4fffffff, "Inter's Chat", lookchatinter, 0));
+                        friends.Add(0x4fffffff, new MessengerBuddy(0x4fffffff, "Interni Chat", lookchatinter, 0));
                 }
                 if (guiaschat == "true")
                 {
                     if (user.Rank >= Convert.ToInt32(guiaschatrank) && user.Isguia || user.HasFuse("fuse_allchatsvisible")) //Change it to the minimum rank you want
-                        friends.Add(0x3fffffff, new MessengerBuddy(0x3fffffff, "Embajadores", lookchatguia, 0));
+                        friends.Add(0x3fffffff, new MessengerBuddy(0x3fffffff, "Ambassador", lookchatguia, 0));
                 }
                 if (pubschat == "true")
                 {
                     if (user.Rank >= Convert.ToInt32(pubschatrank) && user.Ispub || user.HasFuse("fuse_allchatsvisible")) //Change it to the minimum rank you want
-                        friends.Add(0x2fffffff, new MessengerBuddy(0x2fffffff, "Pub's Chat", lookchatpub, 0));
+                        friends.Add(0x2fffffff, new MessengerBuddy(0x2fffffff, "Pubblic Chat", lookchatpub, 0));
                 }
 
                 return new UserData(userId, achievements, favouritedRooms, badges, friends, requests, quests, MyGroups, user, Relationships, RoomRightsList);

@@ -331,15 +331,15 @@ namespace Akiled.HabboHotel.Support
             {
                 case 1:
                     NewStatus = TicketStatus.INVALID;
-                    MessageAlert = "Es-tu certain d'avoir bien utilisé cet outil ? Nous voulons donner le meilleur des services mais nous devons aussi aider d'autres personnes dans l'urgence...";
+                    MessageAlert = "Sei sicuro di aver utilizzato correttamente questo strumento? Vogliamo fornire i migliori servizi ma dobbiamo anche aiutare altre persone in caso di emergenza...";
                     break;
                 case 2:
                     NewStatus = TicketStatus.ABUSIVE;
-                    MessageAlert = "Merci de ne pas utiliser l'outil d'appel à l'aide pour rien. Tu risques l'exclusion.";
+                    MessageAlert = "Si prega di non utilizzare lo strumento di richiesta di aiuto per niente. Rischi l'esclusione.";
                     break;
                 default:
                     NewStatus = TicketStatus.RESOLVED;
-                    MessageAlert = "Merci, ton souci est résolu ou en cours de résolution. N'hésite pas à Ignorer la personne  ou à la supprimer de ta console s'il s'agit d'insultes.";
+                    MessageAlert = "Grazie, il tuo problema è risolto o è in fase di risoluzione. Non esitare a ignorare la persona o a cancellarla dal tuo profilo se si tratta di insulti.";
                     break;
             }
             if (clientByUserId != null)
@@ -419,7 +419,7 @@ namespace Akiled.HabboHotel.Support
             if (LockRoom)
             {
                 room.RoomData.State = 1;
-                room.RoomData.Name = "Cet appart ne respect par les conditions d'utilisation";
+                room.RoomData.Name = "Questo appartamento non è conforme alle condizioni d'uso";
                 using (IQueryAdapter queryreactor = AkiledEnvironment.GetDatabaseManager().GetQueryReactor())
                     queryreactor.RunQuery("UPDATE rooms SET state = 'locked' WHERE id = " + room.Id);
             }
@@ -430,7 +430,7 @@ namespace Akiled.HabboHotel.Support
                 room.ClearTags();
                 room.RoomData.Tags.Clear();
                 using (IQueryAdapter queryreactor = AkiledEnvironment.GetDatabaseManager().GetQueryReactor())
-                    queryreactor.RunQuery("UPDATE rooms SET caption = 'Cet appart ne respect par les conditions dutilisation', description = 'Cet appart ne respect par les conditions dutilisation', tags = '' WHERE id = " + room.Id);
+                    queryreactor.RunQuery("UPDATE rooms SET caption = 'Questo appartamento non è conforme alle condizioni d'uso', description = 'Questo appartamento non è conforme alle condizioni d'uso', tags = '' WHERE id = " + room.Id);
             }
             if (KickUsers)
             {

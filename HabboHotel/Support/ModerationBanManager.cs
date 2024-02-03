@@ -9,7 +9,7 @@ namespace Akiled.HabboHotel.Support
         public Task BanUserAsync(GameClient Client, string Moderator, double LengthSeconds, string Reason, bool IpBan, bool MachineBan)
         {
             if (string.IsNullOrEmpty(Reason))
-                Reason = "Ne respect pas les régles";
+                Reason = "Non rispetta le regole";
 
             string Variable = Client.GetHabbo().Username.ToLower();
             string typeBan = "user";

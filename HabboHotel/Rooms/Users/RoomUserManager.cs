@@ -402,7 +402,7 @@ namespace Akiled.HabboHotel.Rooms
                     foreach (RoomUser StaffUser in roomUserByRank)
                     {
                         if (StaffUser != null && StaffUser.GetClient() != null && (StaffUser.GetClient().GetHabbo() != null && StaffUser.GetClient().GetHabbo().HasFuse("fuse_show_invisible")))
-                            StaffUser.SendWhisperChat(User.GetUsername() + " quien estaba en modo invisible salió de la sala !", true);
+                            StaffUser.SendWhisperChat(User.GetUsername() + " chiunque fosse in modalità invisibile ha lasciato la stanza!", true);
                     }
                 }
             }
@@ -600,7 +600,7 @@ namespace Akiled.HabboHotel.Rooms
                         foreach (RoomUser StaffUser in roomUserByRank)
                         {
                             if (StaffUser != null && StaffUser.GetClient() != null && (StaffUser.GetClient().GetHabbo() != null && StaffUser.GetClient().GetHabbo().HasFuse("fuse_show_invisible")))
-                                StaffUser.SendWhisperChat(User.GetUsername() + "  quien estaba en modo invisible salió de la sala", true);
+                                StaffUser.SendWhisperChat(User.GetUsername() + "  chiunque fosse in modalità invisibile ha lasciato la stanza", true);
                         }
                     }
                 }
@@ -1434,7 +1434,7 @@ namespace Akiled.HabboHotel.Rooms
                                     User.SendWhisperChat(AkiledEnvironment.GetLanguageManager().TryGetValue("rp.itempick", User.GetClient().Langue));
                             }
                         }
-                        User.OnChat("*He recogido un objeto del suelo*");
+                        User.OnChat("*Ho raccolto un oggetto da terra*");
                         this._room.GetRoomItemHandler().RemoveTempItem(ItemTmp.Id);
                     }
                 }
