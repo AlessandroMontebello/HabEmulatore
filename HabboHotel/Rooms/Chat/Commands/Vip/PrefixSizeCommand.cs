@@ -10,7 +10,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
         {
             if (Params.Length == 1)
             {
-                Session.SendWhisper("Oops, debes escribir un numero de 1-20!");
+                Session.SendWhisper("Spiacenti, devi scrivere un numero compreso tra 1 e 20!");
             }
             else
             {
@@ -22,7 +22,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
                     if (result == 12)
                     {
                         Session.GetHabbo().PrefixSize = "12;12";
-                        Session.SendWhisper("Tu tamaño de prefijo, Ha vuelto a la normalidad");
+                        Session.SendWhisper("La dimensione del tuo prefisso è tornata alla normalità");
                     }
                     else
                     {
@@ -37,20 +37,20 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
                             if (!string.IsNullOrEmpty(str))
                             {
                                 Session.GetHabbo().PrefixSize = result.ToString() + ";" + str;
-                                Session.SendWhisper("El tamaño ha sido cambiado a " + Convert.ToString(result));
+                                Session.SendWhisper("La dimensione è stata modificata in " + Convert.ToString(result));
                             }
                             else
                             {
                                 Session.GetHabbo().PrefixSize = Convert.ToString(result) + ";";
-                                Session.SendWhisper("El tamaño ha sido cambiado a " + Convert.ToString(result));
+                                Session.SendWhisper("La dimensione è stata modificata in " + Convert.ToString(result));
                             }
                         }
                         else
-                            Session.SendWhisper("Tamaño invalido, debe ser numero de 1-20.");
+                            Session.SendWhisper("Dimensione non valida, deve essere il numero 1-20.");
                     }
                 }
                 else
-                    Session.SendWhisper("Tamaño invalido, debe ser numero de 1-20.");
+                    Session.SendWhisper("Dimensione non valida, deve essere il numero 1-20.");
             }
         }
     }

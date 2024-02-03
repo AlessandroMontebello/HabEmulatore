@@ -8,10 +8,10 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
         public void Execute(GameClient Session, Room Room, RoomUser UserRoom, string[] Params)
         {
             if (Params.Length < 3)
-                Session.SendWhisper("Oops, introduce el nombre del bot, seguido del mensaje que quieres que diga.", 34);
+                Session.SendWhisper("Spiacenti, inserisci il nome del bot, seguito dal messaggio che vuoi che dica.", 34);
             else if (!Room.CheckRights(Session, true))
             {
-                Session.SendWhisper("Oops, solo el dueño de la sala puede ejecutar este comando.", 34);
+                Session.SendWhisper("Spiacenti, solo il proprietario della stanza può eseguire questo comando.", 34);
             }
             else
             {

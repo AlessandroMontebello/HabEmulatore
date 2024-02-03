@@ -11,7 +11,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
 
             if (string.IsNullOrWhiteSpace(Question))
             {
-                UserRoom.SendWhisperChat("Escribe el mensaje para la escuenta o pregunta.");
+                UserRoom.SendWhisperChat("Scrivi il messaggio per il sondaggio o la domanda.");
                 return;
             }
 

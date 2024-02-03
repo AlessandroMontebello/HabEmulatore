@@ -10,7 +10,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
                 return;
             if (!Room.CheckRights(Session, true))
             {
-                Session.SendWhisper("Oops, solo el dueño de la sala puede ejecutar este comando.", 34);
+                Session.SendWhisper("Spiacenti, solo il proprietario della stanza può eseguire questo comando.", 34);
             }
             else
             {
@@ -19,9 +19,9 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
                     return;
                 roomUserByHabboId.TeleportEnabled = !roomUserByHabboId.TeleportEnabled;
                 if (roomUserByHabboId.TeleportEnabled)
-                    Session.SendWhisper("Has activado el teleport en toda la sala.", 34);
+                    Session.SendWhisper("Hai attivato il teletrasporto in tutta la stanza.", 34);
                 else
-                    Session.SendWhisper("Has desactivado el teleport en toda la sala.", 34);
+                    Session.SendWhisper("Hai disabilitato il teletrasporto in tutta la stanza.", 34);
             }
         }
     }

@@ -9,7 +9,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
         {
             if (Params.Length == 1)
             {
-                Session.SendWhisper("Oops, debes escribir un numero de 1-20!");
+                Session.SendWhisper("Spiacenti, devi scrivere un numero compreso tra 1 e 20!");
             }
             else
             {
@@ -21,7 +21,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
                     if (result == 12)
                     {
                         Session.GetHabbo().PrefixSize = "12;12";
-                        Session.SendWhisper("Tu tamaño de nombre, Ha vuelto a la normalidad");
+                        Session.SendWhisper("La dimensione del tuo nome è tornata alla normalità");
                     }
                     else
                     {
@@ -32,14 +32,14 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
                         {
                             string str = Session.GetHabbo().PrefixSize.Split(';')[0];
                             Session.GetHabbo().PrefixSize = string.IsNullOrEmpty(str) ? ";" + result.ToString() : str + ";" + Convert.ToString(result);
-                            Session.SendWhisper("El tamaño ha sido cambiado a " + Convert.ToString(result));
+                            Session.SendWhisper("La dimensione è stata modificata in " + Convert.ToString(result));
                         }
                         else
-                            Session.SendWhisper("Tamaño invalido, debe ser numero de 1-20.");
+                            Session.SendWhisper("Grandezza non valida, deve essere un numero compreso tra 1 e 20.");
                     }
                 }
                 else
-                    Session.SendWhisper("Tamaño invalido, debe ser numero de 1-20.");
+                    Session.SendWhisper("Grandezza non valida, deve essere un numero compreso tra 1 e 20.");
             }
         }
     }

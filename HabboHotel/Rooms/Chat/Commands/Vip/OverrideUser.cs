@@ -9,7 +9,7 @@ namespace Akiled.HabboHotel.Rooms.Chat.Commands.Cmd
             if (Session.GetHabbo().CurrentRoom == null)
                 return;
             if (!Room.CheckRights(Session, true))
-                Session.SendWhisper("Oops, solo el dueño de la sala puede ejecutar este comando.", 34);
+                Session.SendWhisper("Spiacenti, solo il proprietario della stanza può eseguire questo comando.", 34);
             else if (UserRoom.AllowOverride)
             {
                 UserRoom.AllowOverride = false;
